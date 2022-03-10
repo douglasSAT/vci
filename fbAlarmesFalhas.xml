@@ -2,7 +2,7 @@
 <Document>
   <Engineering version="V17" />
   <DocumentInfo>
-    <Created>2022-03-10T13:04:14.1368197Z</Created>
+    <Created>2022-03-10T13:08:27.0782031Z</Created>
     <ExportSetting>WithDefaults</ExportSetting>
     <InstalledProducts>
       <Product>
@@ -257,79 +257,6 @@
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
   <Parts>
-    <Access Scope="GlobalVariable" UId="21">
-      <Symbol>
-        <Component Name="AlwaysTRUE" />
-      </Symbol>
-    </Access>
-    <Access Scope="LocalVariable" UId="22">
-      <Symbol>
-        <Component Name="xResetGeral" />
-      </Symbol>
-    </Access>
-    <Part Name="Contact" UId="23" />
-    <Part Name="Coil" UId="24" />
-  </Parts>
-  <Wires>
-    <Wire UId="25">
-      <Powerrail />
-      <NameCon UId="23" Name="in" />
-    </Wire>
-    <Wire UId="26">
-      <IdentCon UId="21" />
-      <NameCon UId="23" Name="operand" />
-    </Wire>
-    <Wire UId="27">
-      <NameCon UId="23" Name="out" />
-      <NameCon UId="24" Name="in" />
-    </Wire>
-    <Wire UId="28">
-      <IdentCon UId="22" />
-      <NameCon UId="24" Name="operand" />
-    </Wire>
-  </Wires>
-</FlgNet></NetworkSource>
-          <ProgrammingLanguage>LAD</ProgrammingLanguage>
-        </AttributeList>
-        <ObjectList>
-          <MultilingualText ID="21" CompositionName="Comment">
-            <ObjectList>
-              <MultilingualTextItem ID="22" CompositionName="Items">
-                <AttributeList>
-                  <Culture>en-US</Culture>
-                  <Text />
-                </AttributeList>
-              </MultilingualTextItem>
-              <MultilingualTextItem ID="23" CompositionName="Items">
-                <AttributeList>
-                  <Culture>pt-BR</Culture>
-                  <Text />
-                </AttributeList>
-              </MultilingualTextItem>
-            </ObjectList>
-          </MultilingualText>
-          <MultilingualText ID="24" CompositionName="Title">
-            <ObjectList>
-              <MultilingualTextItem ID="25" CompositionName="Items">
-                <AttributeList>
-                  <Culture>en-US</Culture>
-                  <Text>Comando Reset</Text>
-                </AttributeList>
-              </MultilingualTextItem>
-              <MultilingualTextItem ID="26" CompositionName="Items">
-                <AttributeList>
-                  <Culture>pt-BR</Culture>
-                  <Text>Reset Geral</Text>
-                </AttributeList>
-              </MultilingualTextItem>
-            </ObjectList>
-          </MultilingualText>
-        </ObjectList>
-      </SW.Blocks.CompileUnit>
-      <SW.Blocks.CompileUnit ID="27" CompositionName="CompileUnits">
-        <AttributeList>
-          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
-  <Parts>
     <Access Scope="LocalVariable" UId="21">
       <Symbol>
         <Component Name="xEmergenciaOk" AccessModifier="Array">
@@ -417,6 +344,233 @@
     <Access Scope="LocalVariable" UId="28">
       <Symbol>
         <Component Name="xEmergenciaOk" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>7</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="AlwaysFALSE" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="30" />
+    <Part Name="Contact" UId="31" />
+    <Part Name="Contact" UId="32" />
+    <Part Name="Contact" UId="33" />
+    <Part Name="Contact" UId="34" />
+    <Part Name="Contact" UId="35" />
+    <Part Name="Contact" UId="36" />
+    <Part Name="Contact" UId="37" />
+    <Part Name="Coil" UId="38" />
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="30" Name="in" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="operand" />
+    </Wire>
+    <Wire UId="41">
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="22" />
+      <NameCon UId="31" Name="operand" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="32" Name="in" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="23" />
+      <NameCon UId="32" Name="operand" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="in" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="24" />
+      <NameCon UId="33" Name="operand" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="33" Name="out" />
+      <NameCon UId="34" Name="in" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="25" />
+      <NameCon UId="34" Name="operand" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="34" Name="out" />
+      <NameCon UId="35" Name="in" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="26" />
+      <NameCon UId="35" Name="operand" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="35" Name="out" />
+      <NameCon UId="36" Name="in" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="27" />
+      <NameCon UId="36" Name="operand" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="36" Name="out" />
+      <NameCon UId="37" Name="in" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="28" />
+      <NameCon UId="37" Name="operand" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="37" Name="out" />
+      <NameCon UId="38" Name="in" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="29" />
+      <NameCon UId="38" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="21" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="22" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>pt-BR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Emergência OK</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="26" CompositionName="Items">
+                <AttributeList>
+                  <Culture>pt-BR</Culture>
+                  <Text>Emergência Ok</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="27" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="xFalhasOk" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>0</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="xFalhasOk" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="xFalhasOk" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="xFalhasOk" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="xFalhasOk" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="xFalhasOk" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>5</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="xFalhasOk" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>6</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="xFalhasOk" AccessModifier="Array">
           <Access Scope="LiteralConstant">
             <Constant>
               <ConstantType>DInt</ConstantType>
@@ -540,13 +694,13 @@
               <MultilingualTextItem ID="2C" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
-                  <Text>Emergência OK</Text>
+                  <Text>Falhas OK</Text>
                 </AttributeList>
               </MultilingualTextItem>
               <MultilingualTextItem ID="2D" CompositionName="Items">
                 <AttributeList>
                   <Culture>pt-BR</Culture>
-                  <Text>Emergência Ok</Text>
+                  <Text>Falhas Ok</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -559,7 +713,7 @@
   <Parts>
     <Access Scope="LocalVariable" UId="21">
       <Symbol>
-        <Component Name="xFalhasOk" AccessModifier="Array">
+        <Component Name="xAlarmesOk" AccessModifier="Array">
           <Access Scope="LiteralConstant">
             <Constant>
               <ConstantType>DInt</ConstantType>
@@ -571,7 +725,7 @@
     </Access>
     <Access Scope="LocalVariable" UId="22">
       <Symbol>
-        <Component Name="xFalhasOk" AccessModifier="Array">
+        <Component Name="xAlarmesOk" AccessModifier="Array">
           <Access Scope="LiteralConstant">
             <Constant>
               <ConstantType>DInt</ConstantType>
@@ -583,7 +737,7 @@
     </Access>
     <Access Scope="LocalVariable" UId="23">
       <Symbol>
-        <Component Name="xFalhasOk" AccessModifier="Array">
+        <Component Name="xAlarmesOk" AccessModifier="Array">
           <Access Scope="LiteralConstant">
             <Constant>
               <ConstantType>DInt</ConstantType>
@@ -595,7 +749,7 @@
     </Access>
     <Access Scope="LocalVariable" UId="24">
       <Symbol>
-        <Component Name="xFalhasOk" AccessModifier="Array">
+        <Component Name="xAlarmesOk" AccessModifier="Array">
           <Access Scope="LiteralConstant">
             <Constant>
               <ConstantType>DInt</ConstantType>
@@ -607,7 +761,7 @@
     </Access>
     <Access Scope="LocalVariable" UId="25">
       <Symbol>
-        <Component Name="xFalhasOk" AccessModifier="Array">
+        <Component Name="xAlarmesOk" AccessModifier="Array">
           <Access Scope="LiteralConstant">
             <Constant>
               <ConstantType>DInt</ConstantType>
@@ -619,7 +773,7 @@
     </Access>
     <Access Scope="LocalVariable" UId="26">
       <Symbol>
-        <Component Name="xFalhasOk" AccessModifier="Array">
+        <Component Name="xAlarmesOk" AccessModifier="Array">
           <Access Scope="LiteralConstant">
             <Constant>
               <ConstantType>DInt</ConstantType>
@@ -631,7 +785,7 @@
     </Access>
     <Access Scope="LocalVariable" UId="27">
       <Symbol>
-        <Component Name="xFalhasOk" AccessModifier="Array">
+        <Component Name="xAlarmesOk" AccessModifier="Array">
           <Access Scope="LiteralConstant">
             <Constant>
               <ConstantType>DInt</ConstantType>
@@ -643,7 +797,7 @@
     </Access>
     <Access Scope="LocalVariable" UId="28">
       <Symbol>
-        <Component Name="xFalhasOk" AccessModifier="Array">
+        <Component Name="xAlarmesOk" AccessModifier="Array">
           <Access Scope="LiteralConstant">
             <Constant>
               <ConstantType>DInt</ConstantType>
@@ -767,237 +921,10 @@
               <MultilingualTextItem ID="33" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
-                  <Text>Falhas OK</Text>
-                </AttributeList>
-              </MultilingualTextItem>
-              <MultilingualTextItem ID="34" CompositionName="Items">
-                <AttributeList>
-                  <Culture>pt-BR</Culture>
-                  <Text>Falhas Ok</Text>
-                </AttributeList>
-              </MultilingualTextItem>
-            </ObjectList>
-          </MultilingualText>
-        </ObjectList>
-      </SW.Blocks.CompileUnit>
-      <SW.Blocks.CompileUnit ID="35" CompositionName="CompileUnits">
-        <AttributeList>
-          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
-  <Parts>
-    <Access Scope="LocalVariable" UId="21">
-      <Symbol>
-        <Component Name="xAlarmesOk" AccessModifier="Array">
-          <Access Scope="LiteralConstant">
-            <Constant>
-              <ConstantType>DInt</ConstantType>
-              <ConstantValue>0</ConstantValue>
-            </Constant>
-          </Access>
-        </Component>
-      </Symbol>
-    </Access>
-    <Access Scope="LocalVariable" UId="22">
-      <Symbol>
-        <Component Name="xAlarmesOk" AccessModifier="Array">
-          <Access Scope="LiteralConstant">
-            <Constant>
-              <ConstantType>DInt</ConstantType>
-              <ConstantValue>1</ConstantValue>
-            </Constant>
-          </Access>
-        </Component>
-      </Symbol>
-    </Access>
-    <Access Scope="LocalVariable" UId="23">
-      <Symbol>
-        <Component Name="xAlarmesOk" AccessModifier="Array">
-          <Access Scope="LiteralConstant">
-            <Constant>
-              <ConstantType>DInt</ConstantType>
-              <ConstantValue>2</ConstantValue>
-            </Constant>
-          </Access>
-        </Component>
-      </Symbol>
-    </Access>
-    <Access Scope="LocalVariable" UId="24">
-      <Symbol>
-        <Component Name="xAlarmesOk" AccessModifier="Array">
-          <Access Scope="LiteralConstant">
-            <Constant>
-              <ConstantType>DInt</ConstantType>
-              <ConstantValue>3</ConstantValue>
-            </Constant>
-          </Access>
-        </Component>
-      </Symbol>
-    </Access>
-    <Access Scope="LocalVariable" UId="25">
-      <Symbol>
-        <Component Name="xAlarmesOk" AccessModifier="Array">
-          <Access Scope="LiteralConstant">
-            <Constant>
-              <ConstantType>DInt</ConstantType>
-              <ConstantValue>4</ConstantValue>
-            </Constant>
-          </Access>
-        </Component>
-      </Symbol>
-    </Access>
-    <Access Scope="LocalVariable" UId="26">
-      <Symbol>
-        <Component Name="xAlarmesOk" AccessModifier="Array">
-          <Access Scope="LiteralConstant">
-            <Constant>
-              <ConstantType>DInt</ConstantType>
-              <ConstantValue>5</ConstantValue>
-            </Constant>
-          </Access>
-        </Component>
-      </Symbol>
-    </Access>
-    <Access Scope="LocalVariable" UId="27">
-      <Symbol>
-        <Component Name="xAlarmesOk" AccessModifier="Array">
-          <Access Scope="LiteralConstant">
-            <Constant>
-              <ConstantType>DInt</ConstantType>
-              <ConstantValue>6</ConstantValue>
-            </Constant>
-          </Access>
-        </Component>
-      </Symbol>
-    </Access>
-    <Access Scope="LocalVariable" UId="28">
-      <Symbol>
-        <Component Name="xAlarmesOk" AccessModifier="Array">
-          <Access Scope="LiteralConstant">
-            <Constant>
-              <ConstantType>DInt</ConstantType>
-              <ConstantValue>7</ConstantValue>
-            </Constant>
-          </Access>
-        </Component>
-      </Symbol>
-    </Access>
-    <Access Scope="GlobalVariable" UId="29">
-      <Symbol>
-        <Component Name="AlwaysFALSE" />
-      </Symbol>
-    </Access>
-    <Part Name="Contact" UId="30" />
-    <Part Name="Contact" UId="31" />
-    <Part Name="Contact" UId="32" />
-    <Part Name="Contact" UId="33" />
-    <Part Name="Contact" UId="34" />
-    <Part Name="Contact" UId="35" />
-    <Part Name="Contact" UId="36" />
-    <Part Name="Contact" UId="37" />
-    <Part Name="Coil" UId="38" />
-  </Parts>
-  <Wires>
-    <Wire UId="39">
-      <Powerrail />
-      <NameCon UId="30" Name="in" />
-    </Wire>
-    <Wire UId="40">
-      <IdentCon UId="21" />
-      <NameCon UId="30" Name="operand" />
-    </Wire>
-    <Wire UId="41">
-      <NameCon UId="30" Name="out" />
-      <NameCon UId="31" Name="in" />
-    </Wire>
-    <Wire UId="42">
-      <IdentCon UId="22" />
-      <NameCon UId="31" Name="operand" />
-    </Wire>
-    <Wire UId="43">
-      <NameCon UId="31" Name="out" />
-      <NameCon UId="32" Name="in" />
-    </Wire>
-    <Wire UId="44">
-      <IdentCon UId="23" />
-      <NameCon UId="32" Name="operand" />
-    </Wire>
-    <Wire UId="45">
-      <NameCon UId="32" Name="out" />
-      <NameCon UId="33" Name="in" />
-    </Wire>
-    <Wire UId="46">
-      <IdentCon UId="24" />
-      <NameCon UId="33" Name="operand" />
-    </Wire>
-    <Wire UId="47">
-      <NameCon UId="33" Name="out" />
-      <NameCon UId="34" Name="in" />
-    </Wire>
-    <Wire UId="48">
-      <IdentCon UId="25" />
-      <NameCon UId="34" Name="operand" />
-    </Wire>
-    <Wire UId="49">
-      <NameCon UId="34" Name="out" />
-      <NameCon UId="35" Name="in" />
-    </Wire>
-    <Wire UId="50">
-      <IdentCon UId="26" />
-      <NameCon UId="35" Name="operand" />
-    </Wire>
-    <Wire UId="51">
-      <NameCon UId="35" Name="out" />
-      <NameCon UId="36" Name="in" />
-    </Wire>
-    <Wire UId="52">
-      <IdentCon UId="27" />
-      <NameCon UId="36" Name="operand" />
-    </Wire>
-    <Wire UId="53">
-      <NameCon UId="36" Name="out" />
-      <NameCon UId="37" Name="in" />
-    </Wire>
-    <Wire UId="54">
-      <IdentCon UId="28" />
-      <NameCon UId="37" Name="operand" />
-    </Wire>
-    <Wire UId="55">
-      <NameCon UId="37" Name="out" />
-      <NameCon UId="38" Name="in" />
-    </Wire>
-    <Wire UId="56">
-      <IdentCon UId="29" />
-      <NameCon UId="38" Name="operand" />
-    </Wire>
-  </Wires>
-</FlgNet></NetworkSource>
-          <ProgrammingLanguage>LAD</ProgrammingLanguage>
-        </AttributeList>
-        <ObjectList>
-          <MultilingualText ID="36" CompositionName="Comment">
-            <ObjectList>
-              <MultilingualTextItem ID="37" CompositionName="Items">
-                <AttributeList>
-                  <Culture>en-US</Culture>
-                  <Text />
-                </AttributeList>
-              </MultilingualTextItem>
-              <MultilingualTextItem ID="38" CompositionName="Items">
-                <AttributeList>
-                  <Culture>pt-BR</Culture>
-                  <Text />
-                </AttributeList>
-              </MultilingualTextItem>
-            </ObjectList>
-          </MultilingualText>
-          <MultilingualText ID="39" CompositionName="Title">
-            <ObjectList>
-              <MultilingualTextItem ID="3A" CompositionName="Items">
-                <AttributeList>
-                  <Culture>en-US</Culture>
                   <Text>Alarmes OK</Text>
                 </AttributeList>
               </MultilingualTextItem>
-              <MultilingualTextItem ID="3B" CompositionName="Items">
+              <MultilingualTextItem ID="34" CompositionName="Items">
                 <AttributeList>
                   <Culture>pt-BR</Culture>
                   <Text>Alarmes Ok</Text>
@@ -1007,15 +934,15 @@
           </MultilingualText>
         </ObjectList>
       </SW.Blocks.CompileUnit>
-      <MultilingualText ID="3C" CompositionName="Title">
+      <MultilingualText ID="35" CompositionName="Title">
         <ObjectList>
-          <MultilingualTextItem ID="3D" CompositionName="Items">
+          <MultilingualTextItem ID="36" CompositionName="Items">
             <AttributeList>
               <Culture>en-US</Culture>
               <Text />
             </AttributeList>
           </MultilingualTextItem>
-          <MultilingualTextItem ID="3E" CompositionName="Items">
+          <MultilingualTextItem ID="37" CompositionName="Items">
             <AttributeList>
               <Culture>pt-BR</Culture>
               <Text />
