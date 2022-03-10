@@ -275,7 +275,7 @@
           <Access Scope="LiteralConstant">
             <Constant>
               <ConstantType>DInt</ConstantType>
-              <ConstantValue>1</ConstantValue>
+              <ConstantValue>0</ConstantValue>
             </Constant>
           </Access>
         </Component>
